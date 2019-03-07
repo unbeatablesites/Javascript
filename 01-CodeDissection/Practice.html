@@ -23,7 +23,14 @@
       const res2 = alert(
         "I have a dog her name is Olivia. She is 5 years old. Want to know how many year apart our dogs are?"
       );
-      const question3 = prompt("How old is your dog");
+      const question3 = prompt("How old is your dog?");
+
+      const message = alert(
+        "Ok! let me make sure I understand. My dog Olivia is 5 and your dog is " +
+          question3 +
+          " If my math is correct then our dogs are " +
+          (5 - question3)
+      );
 
       document.write("Welcome to this web page " + user);
     </script>
