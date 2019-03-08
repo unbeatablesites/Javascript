@@ -8,7 +8,11 @@
     <script type="text/javascript">
       const doYouEatSteak = confirm("Do you eat steak");
 
-      const howOldAreYou = prompt;
+      const howOldAreYou = prompt("How old are you");
+
+      if (howOldAreYou > 1998) {
+        alert("No sake for you!");
+      }
 
       if (doYouEatSteak) {
         document.write("Here’s a Steak Sandwich!");
