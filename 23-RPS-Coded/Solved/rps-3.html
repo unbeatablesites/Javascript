@@ -35,7 +35,7 @@
       document.onkeyup = event => {
         const userChoice = event.key;
         const computerGuess =
-          computerChoices[Math.random(Math.random() * computerChoices.length)];
+          computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
         console.log(userChoice);
         console.log(computerGuess);
