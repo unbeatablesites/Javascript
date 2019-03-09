@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Loops</title>
   </head>
   <body>
-
     <h1>Open the console to see the magic!</h1>
 
     <script>
-
       // Array of zoo animals.
       var zooAnimals = ["Zebra", "Rhino", "Giraffe", "Owl"];
 
@@ -20,16 +18,14 @@
       }
 
       // We can also do this with a function.
-      function logArray(list) {
-        for (var j = 0; j < list.length; j++) {
-          console.log(list[j]);
+      function logArray() {
+        for (var j = 0; j < zooAnimals.length; j++) {
+          console.log(zooAnimals[j]);
         }
       }
 
       // Produces the same result as the raw loop above.
       logArray(zooAnimals);
-
     </script>
-
   </body>
 </html>
