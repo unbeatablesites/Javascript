@@ -37,7 +37,8 @@
         const computerGuess =
           computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-        console.log(userChoice);
+        if (userChoice === s || userChoice === r || userChoice === p)
+          console.log(userChoice);
         console.log(computerGuess);
       };
     </script>
