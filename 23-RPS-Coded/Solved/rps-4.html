@@ -59,6 +59,7 @@
           computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
         if (userInput === "r" || userInput === "s" || userInput === "p") {
+          directionText.textContent = "";
           displayUserText.textContent = "You chose: " + userInput;
           displayComText.textContent = "Computer choses: " + comInput;
         }
