@@ -11,6 +11,10 @@
       const question = prompt("What is your favorite band.");
 
       const lowered = question.toLowerCase();
+
+      if (favBands.indexOf(lowered) === -1) {
+        alert("I've never heard of that band.");
+      }
     </script>
   </body>
 </html>
