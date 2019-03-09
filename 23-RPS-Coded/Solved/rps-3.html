@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors Part 3</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Rock Paper Scissors Part 3</title>
-</head>
+  <body>
+    <div id="game"></div>
 
-<body>
+    <script type="text/javascript">
+      // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+      var computerChoices = ["r", "p", "s"];
 
-  <div id="game">
+      // // This function is run whenever the user presses a key.
+      // document.onkeyup = function(event) {
 
-  </div>
+      //   // Determines which key was pressed.
+      //   var userGuess = event.key;
 
-  <script type="text/javascript">
+      //   // Randomly chooses a choice from the options array. This is the Computer's guess.
+      //   var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-    // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
-    var computerChoices = ["r", "p", "s"];
+      //   // Only run the following code block if the user presses "r" or "p" or "s".
+      //   if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
 
-    // This function is run whenever the user presses a key.
-    document.onkeyup = function(event) {
+      //     // Alert the userGuess and computerGuess
+      //     alert("User guess: " + userGuess);
+      //     alert("Computer guess: " + computerGuess);
 
-      // Determines which key was pressed.
-      var userGuess = event.key;
-
-      // Randomly chooses a choice from the options array. This is the Computer's guess.
-      var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-
-      // Only run the following code block if the user presses "r" or "p" or "s".
-      if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
-
-        // Alert the userGuess and computerGuess
-        alert("User guess: " + userGuess);
-        alert("Computer guess: " + computerGuess);
-
-      }
-    };
-  </script>
-
-</body>
-
+      //   }
+      // };
+    </script>
+  </body>
 </html>
