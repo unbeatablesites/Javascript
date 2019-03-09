@@ -18,8 +18,7 @@
         var userGuess = event.key;
 
         // Randomly chooses a choice from the options array. This is the Computer's guess.
-        var computerGuess =
-          computerChoices[Math.floor(Math.random() * computerChoices.length)];
+        var computerGuess = computerChoices[Math.floor(Math.random() * 3)];
 
         // Alerts the key the user pressed (userGuess).
         alert("User guess: " + userGuess);
