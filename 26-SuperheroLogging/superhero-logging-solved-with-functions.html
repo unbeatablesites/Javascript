@@ -68,17 +68,17 @@
       const letter4 = "n";
       const letter5 = "k";
 
+      const empytArr = [];
+
       const spell = arr => {
         for (var i = 0; i < arr.length; i++) {
-          console.log(arr[i]);
+          console.log(arr.length);
+          empytArr.push(arr[i]);
         }
+        console.log(empytArr);
       };
 
-      spell(letter1);
-      spell(letter2);
-      spell(letter3);
-      spell(letter4);
-      spell(letter5);
+      spell(letter1 + letter2 + letter3 + letter4 + letter5);
     </script>
   </body>
 </html>
