@@ -60,8 +60,10 @@
 
         if (userInput === "r" || userInput === "s" || userInput === "p") {
           directionText.textContent = "";
-          displayUserText.textContent = "You chose: " + userInput;
-          displayComText.textContent = "Computer choses: " + comInput;
+          displayUserText.textContent = "You chose: " + displayUserText;
+          winsText.textContent = "User Score: " + winsText;
+          cWinsText.textContent = "Computer Score: " + cWinsText;
+          tieText.textContent = "Number of ties: " + ties;
         }
       };
     </script>
