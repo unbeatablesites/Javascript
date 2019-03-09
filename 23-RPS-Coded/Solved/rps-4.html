@@ -41,9 +41,14 @@
       const displayUserText = document.getElementById("userchoice-text");
       const displayComText = document.getElementById("computerchoice-text");
 
-          document.onkeyup() =>{
+      document.onkeyup = event => {
+        const userInput = event.key;
+        const comInput =
+          computerchoice[Math.floor(Math.random() * computerChoices.length)];
 
-          }
+        if (userInput === "r" || userInput === "s" || userInput === "p") {
+        }
+      };
     </script>
   </body>
 </html>
