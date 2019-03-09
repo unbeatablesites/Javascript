@@ -59,6 +59,41 @@
           computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
         if (userInput === "r" || userInput === "s" || userInput === "p") {
+          // If we choose rock and the computer guesses scissors, increment our wins variable.
+          if (userGuess === "r" && comInput === "s") {
+            wins++;
+          }
+
+          // If we choose rock and the computer guesses paper, increment our losses variable.
+          if (userInput === "r" && comInput === "p") {
+            losses++;
+          }
+
+          // If we choose scissors and the computer guesses rock, increment our losses variable.
+          if (userInput === "s" && comInput === "r") {
+            losses++;
+          }
+
+          // If we choose scissors and the computer guesses paper, increment our wins variable.
+          if (userInput === "s" && comInput === "p") {
+            wins++;
+          }
+
+          // If we choose paper and the computer guesses rock, increment our wins variable.
+          if (userInput === "p" && comInput === "r") {
+            wins++;
+          }
+
+          // If we choose paper and the computer guesses scissors, increment our losses variable.
+          if (userInput === "p" && comInput === "s") {
+            losses++;
+          }
+
+          // If we choose the same thing as the computer, increment our ties variable.
+          if (userInput === comInput) {
+            ties++;
+          }
+
           directionText.textContent = "";
           displayUserText.textContent = "Your choice: " + userInput;
           displayComText.textContent = "Computer choice: " + comInput;
