@@ -54,7 +54,7 @@
       const tieText = document.getElementById("ties");
 
       document.onkeyup = event => {
-        const userInput = event.key;
+        const userInput = event.key.toLowerCase();
         const comInput =
           computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
@@ -62,8 +62,8 @@
           directionText.textContent = "";
           displayUserText.textContent = "Your chose: " + userInput;
           displayComText.textContent = "Computer choise: " + comInput;
-          winsText.textContent = "User Score: " + winsText;
-          cWinsText.textContent = "Computer Score: " + cWinsText;
+          winsText.textContent = "User Score: " + wins;
+          cWinsText.textContent = "Computer Score: " + losses;
           tieText.textContent = "Number of ties: " + ties;
         }
       };
