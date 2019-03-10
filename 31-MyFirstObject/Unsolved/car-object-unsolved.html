@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>My First Object</title>
   </head>
   <body>
-
     <script>
-
       var car = {
         make: "Honda",
         model: "Fit",
@@ -16,7 +14,6 @@
         isWorking: true,
 
         driveToWork: function() {
-
           alert("Old Mileage: " + this.mileage);
 
           this.mileage = this.mileage + 8;
@@ -25,7 +22,6 @@
         },
 
         driveAroundWorld: function() {
-
           alert("Old Mileage: " + this.mileage);
 
           this.mileage = this.mileage + 24000;
@@ -46,12 +42,15 @@
         }
       };
 
-
       // How would we log...
 
       // The car's make?
 
+      console.log(car.make);
+
       // The car's model?
+
+      console.log(car.model);
 
       // The car's mileage?
 
@@ -60,8 +59,6 @@
       // How would we run the car's driveAroundWorld method?
 
       // How would we run the getTuneUp method?
-
     </script>
-    
   </body>
 </html>
