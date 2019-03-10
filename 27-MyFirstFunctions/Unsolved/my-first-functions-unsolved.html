@@ -29,11 +29,13 @@
       // "isString" determines if all three arguments are strings and logs an appropriate response to the console.
 
       const isString = (x, y, z) => {
-
-        if(
-          typeof x === "string" && typeof y === "string" && typeof z === "string"&&){
+        if (
+          typeof x === "string" &&
+          typeof y === "string" &&
+          typeof z === "string"
+        ) {
           console.log("Nice this is a string");
-        }else{
+        } else {
           consle.log("This is not a string");
         }
       };
@@ -85,6 +87,7 @@
       console.log("-------------------");
 
       // Call the isString function here.
+      isString("A", "A", "A");
 
       console.log("-------------------");
 
