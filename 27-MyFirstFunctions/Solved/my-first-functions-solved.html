@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>My First Function</title>
   </head>
   <body>
-
     <h1>Open the console to see the magic!</h1>
 
     <script>
-
       // FUNCTIONS
       // ================================================================================
 
       // Creates a Function called "adder" that takes three arguments (x, y, z).
       function adder(x, y, z) {
-
         // The function should add the arguments together, and log the result to the console.
         console.log(x + y + z);
       }
@@ -27,7 +24,6 @@
 
       // Creates a Function called "multiplier" that takes three arguments (x, y, z).
       function multiplier(x, y, z) {
-
         // The function should multiply the arguments, and log the result to the console.
         console.log(x * y * z);
       }
@@ -39,11 +35,14 @@
 
       // Creates a Function called "isString" that takes three arguments (x, y, z).
       function isString(x, y, z) {
-
         // isString checks if each argument is a string using typeof.
 
         // If each argument is a string it will note that.
-        if (typeof x === "string" && typeof y === "string" && typeof z === "string") {
+        if (
+          typeof x === "string" &&
+          typeof y === "string" &&
+          typeof z === "string"
+        ) {
           console.log("Yep. They are all strings");
         }
 
@@ -55,23 +54,22 @@
 
       // Creates a Function called "vowelChecker" that takes in a single argument (x).
       function vowelChecker(x) {
-
         // vowelChecker will grab the first letter (character)...
         var firstChar = x.toLowerCase().charAt(0);
 
         // Then check if that first letter is a vowel.
-        if (firstChar === "a" || firstChar === "e" || firstChar === "i" || firstChar === "o" || firstChar === "u") {
-
+        if (
+          firstChar === "a" ||
+          firstChar === "e" ||
+          firstChar === "i" ||
+          firstChar === "o" ||
+          firstChar === "u"
+        ) {
           // If so... it will log that.
           console.log("OMG. The first letter is a vowel!");
-
-        }
-
-        else {
-
+        } else {
           // If not... it will log that.
           console.log("First letter is NOT a vowel. *sadface*");
-
         }
       }
 
@@ -93,7 +91,7 @@
       console.log("-------------------");
 
       // Calling our multiplier function.
-      multiplier(2, 3, 4);
+      multiplier(2, 2, 2);
 
       console.log("-------------------");
 
@@ -112,8 +110,6 @@
       // Calling our vowelChecker function.
       vowelChecker("Eek");
       vowelChecker("Nah");
-
     </script>
-
   </body>
 </html>
