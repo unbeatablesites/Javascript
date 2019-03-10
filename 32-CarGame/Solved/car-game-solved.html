@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Car Adventures!</title>
   </head>
   <body>
-
     <h1>Car Adventures!</h1>
-    <h2>Type "h" to honk, "d" to drive to work, "w" to drive around the world, or "t" to get a tuneup.</h2>
+    <h2>
+      Type "h" to honk, "d" to drive to work, "w" to drive around the world, or
+      "t" to get a tuneup.
+    </h2>
     <h2>See console for car stats.</h2>
 
     <script>
-
       // VARIABLES
       // ==========================================================================
       var car = {
@@ -50,7 +51,6 @@
         }
       };
 
-
       // FUNCTIONS
       // ==============================================================================
 
@@ -69,7 +69,6 @@
 
       // Captures keyboard input. Depending on the letter pressed it will "call" (execute) different functions.
       document.onkeyup = function(event) {
-
         // Captures the key press, converts it to lowercase, and saves it to a variable.
         var letter = event.key.toLowerCase();
 
@@ -97,8 +96,6 @@
           reWriteStats();
         }
       };
-
     </script>
-
   </body>
 </html>
