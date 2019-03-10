@@ -66,8 +66,8 @@
       };
 
       // Creates a version of "multiplier" that returns its result. Function is called "multiplierReturn".
-      const multiplierReturn = () => {
-        return multiplier;
+      const multiplierReturn = (x, y, z) => {
+        return x * y * z;
       };
 
       // FUNCTION EXECUTION
@@ -107,6 +107,9 @@
 
       console.log("-------------------");
 
+      aVar2 = multiplierReturn(3, 3, 3);
+
+      console.log(aVar2);
       // Call the multiplierReturn function here and set it equal to a variable. Then log that variable to the console.
     </script>
   </body>
