@@ -57,6 +57,10 @@
 
       document.onkeyup = event => {
         var letter = event.key.toLowerCase();
+
+        if (letter === "h") {
+          car.honk();
+        }
       };
     </script>
   </body>
