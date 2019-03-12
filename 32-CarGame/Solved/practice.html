@@ -20,24 +20,24 @@
         mileage: 3000,
         isWorking: true,
         driveToWork: () => {
-          alert("Old mileage is " + car.mileage);
+          alert("Old mileage is " + this.mileage);
 
-          car.mileage = car.mileage + 8;
+          this.mileage = this.mileage + 8;
 
-          alert("The new mileage is " + car.mileage);
+          alert("The new mileage is " + this.mileage);
         },
         driveAroundWorld: () => {
-          alert("Old mileage is " + car.mileage);
+          alert("Old mileage is " + this.mileage);
 
-          car.mileage = car.mileage + 24000;
+          this.mileage = this.mileage + 24000;
 
-          alert("The new mileage is " + car.mileage);
+          alert("The new mileage is " + this.mileage);
           alert("Car needs a tuneup!");
 
-          car.isWorking = false;
+          this.isWorking = false;
         },
         getTuneUp: () => {
-          car.isWorking = true;
+          this.isWorking = true;
           alert("The car is working");
         },
 
