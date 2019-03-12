@@ -25,6 +25,16 @@
           this.mileage = this.mileage + 8;
 
           alert("The new mileage is " + this.mileage);
+        },
+        driveAroundWorld: () => {
+          alert("Old mileage is " + this.mileage);
+
+          this.mileage = this.mileage + 24000;
+
+          alert("The new mileage is " + this.mileage);
+          alert("Car needs a tuneup!");
+
+          this.isWorking = false;
         }
       };
     </script>
