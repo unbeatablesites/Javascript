@@ -36,7 +36,10 @@
 
           this.isWorking = false;
         },
-        getTuneUp: () => {}
+        getTuneUp: () => {
+          this.isWorking = true;
+          alert("The car is working");
+        }
       };
 
       var driveAroundWorld = driveAroundWorld();
