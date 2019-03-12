@@ -17,10 +17,12 @@
         make: "LandRover",
         model: "Discovery",
         color: "gold",
-        milage: 3000,
+        mileage: 3000,
         isWorking: true,
         driveToWork: () => {
           alert("Old mileage is " + this.mileage);
+
+          this.mileage = this.mileage + 8;
         }
       };
     </script>
